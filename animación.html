@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cohete</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+}
+
+
+#contenedor{
+    width: 400px;
+    height: 200px;
+    background: black;
+    border: 1px solid white;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* COHETE */
+#cuadrito{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 160px;
+
+    animation: subir 3s infinite linear;
+}
+
+
+@keyframes subir{
+    from{
+        top: 150px; 
+    }
+    to{
+        top: 0px; 
+    }
+}
+
+#cuadrito img{
+    width: 80px;
+    height: 80px;
+}
+
+
+.estrella{
+    width: 4px;
+    height: 4px;
+    background: white;
+    position: absolute;
+    border-radius: 50%;
+    animation: mover 3s linear infinite;
+}
+
+
+.e1{ left: 40px; animation-duration: 2s; }
+.e2{ left: 120px; animation-duration: 3s; }
+.e3{ left: 250px; animation-duration: 4s; }
+.e4{ left: 300px; animation-duration: 5s; }
+.e5{ left: 350px; animation-duration: 2.5s; }
+.e6{ left: 80px; animation-duration: 3.5s; }
+.e7{ left: 60px; animation-duration: 2.2s; }
+.e8{ left: 180px; animation-duration: 4.5s; }
+.e9{ left: 220px; animation-duration: 3.2s; }
+.e10{ left: 340px; animation-duration: 2.8s; }
+
+.e11{ left: 200px; animation-duration: 5s; }
+.e12{ left: 100px; animation-duration: 3.7s; }
+.e13{ left: 280px; animation-duration: 2.4s; }
+.e14{ left: 30px; animation-duration: 4.2s; }
+.e15{ left: 320px; animation-duration: 3s; }
+
+
+@keyframes mover{
+    from{
+        top: -10px; /* empieza fuera (arriba) */
+        opacity: 1;
+    }
+    to{
+        top: 200px; /* baja hasta el final */
+        opacity: 0.5;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="contenedor">
+
+    
+    <div class="estrella e1"></div>
+    <div class="estrella e2"></div>
+    <div class="estrella e3"></div>
+    <div class="estrella e4"></div>
+    <div class="estrella e5"></div>
+    <div class="estrella e6"></div>
+    <div class="estrella e7"></div>
+    <div class="estrella e8"></div>
+    <div class="estrella e9"></div>
+    <div class="estrella e10"></div>
+    <div class="estrella e11"></div>
+    <div class="estrella e12"></div>
+    <div class="estrella e13"></div>
+    <div class="estrella e14"></div>
+    <div class="estrella e15"></div>
+
+    
+    <div id="cuadrito">
+        <img src="img/cohete.gif" alt="cohete">
+    </div>
+
+</div>
+
+</body>
+</html>
